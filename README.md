@@ -86,16 +86,23 @@ APIs require the configured NEXUS bearer token.
 The tokenless recruiter walkthrough is live at
 [rbgdgar.github.io/nexus-command-center-showcase](https://rbgdgar.github.io/nexus-command-center-showcase/).
 It is a static, interactive read-only V2.21 walkthrough with no backend requests
-or secrets. A fuller backend demo is prepared as an isolated deployment using
+or secrets. The fuller backend demo is live as an isolated deployment using
 `NEXUS_DEMO_MODE=true`, disposable fictional data, no provider keys, no runner
 credentials, and no production database. Do not use the token-protected URL as
 the recruiter demo.
+
+The verified full V2.21 demo is live at
+[nexus-command-center-demo.onrender.com](https://nexus-command-center-demo.onrender.com/).
+It exposes the NEXUS UI and read-only API without a token. The demo reports
+`demo_mode: true`, seeds fictional conversations, and rejects state-changing
+requests. The original [protected Render service](https://nexus-command-center-r3h8.onrender.com/)
+remains separate.
 
 ### Full backend demo deployment
 
 [![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/rbgdgar/nexus-command-center-showcase)
 
-The button creates a separate `nexus-command-center-demo` service from the
+The button creates the separate `nexus-command-center-demo` service from the
 included `render.yaml`. It is designed to resemble the full NEXUS UI while
 remaining anonymous and read-only: it seeds fictional conversations, uses local
 disposable SQLite storage, disables provider calls, and rejects all state-changing

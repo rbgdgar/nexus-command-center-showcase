@@ -11,6 +11,7 @@ NEXUS is at V2.21.0 on `main`; the live Render deployment still reflects the lat
 - Full source repository: https://github.com/rbgdgar/nexus-command-center
 - Recruiter showcase: https://github.com/rbgdgar/nexus-command-center-showcase
 - Verified tokenless walkthrough: https://rbgdgar.github.io/nexus-command-center-showcase/
+- Verified full V2.21 demo: https://nexus-command-center-demo.onrender.com/
 - Implementation baseline: V2.21 bulk conversation management and sidebar polish milestone
 - Latest commit: `f8655aee337fe0afd0855134f7570c338617af19` (`feat: add bulk conversation management`)
 - Latest GitHub validation: passed — [Validate NEXUS run 33331909822](https://github.com/rbgdgar/nexus-command-center/actions/runs/33331909822)
@@ -78,10 +79,10 @@ is explicitly approved and independently verified.
 - [ ] Perform browser verification of sidebar selection, independent scrolling, width adjustment, and bulk actions.
 - [ ] Record the deployment timestamp, commit, endpoint results, and any rollback decision here.
 
-The static anonymous recruiter walkthrough is live and requires no token. The
-full anonymous backend demo host is not provisioned yet. It must be configured
-with `NEXUS_DEMO_MODE=true`, no secrets, disposable data, and independent endpoint
-and browser verification before it is advertised as a backend demo.
+The static anonymous recruiter walkthrough and the full anonymous backend demo
+are live and require no token. The backend demo independently reports V2.21.0,
+`demo_mode: true`, and `authentication_required: false`; it contains fictional
+seed data and rejects state-changing requests with HTTP 403.
 
 ## Optional configuration still pending
 
