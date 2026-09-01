@@ -83,11 +83,13 @@ for persistent data. Its public health endpoint is available at
 [`/health`](https://nexus-command-center-r3h8.onrender.com/health); application
 APIs require the configured NEXUS bearer token.
 
-An anonymous recruiter demo is prepared as an isolated read-only deployment. It
-uses `NEXUS_DEMO_MODE=true`, disposable fictional data, no provider keys,
-no runner credentials, and no production database. The live demo URL will be
-will be added here only after anonymous endpoint and browser verification. Do not use the
-token-protected URL as the recruiter demo.
+The tokenless recruiter walkthrough is live at
+[rbgdgar.github.io/nexus-command-center-showcase](https://rbgdgar.github.io/nexus-command-center-showcase/).
+It is a static, interactive read-only V2.21 walkthrough with no backend requests
+or secrets. A fuller backend demo is prepared as an isolated deployment using
+`NEXUS_DEMO_MODE=true`, disposable fictional data, no provider keys, no runner
+credentials, and no production database. Do not use the token-protected URL as
+the recruiter demo.
 
 The delivery sequence is documented in [`ROADMAP.md`](ROADMAP.md), and production
 procedures are maintained in [`docs/OPERATIONS.md`](docs/OPERATIONS.md).

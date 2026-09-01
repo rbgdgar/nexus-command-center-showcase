@@ -10,6 +10,7 @@ NEXUS is at V2.21.0 on `main`; the live Render deployment still reflects the lat
 - Showcase repository: https://github.com/rbgdgar/nexus-command-center-showcase
 - Full source repository: https://github.com/rbgdgar/nexus-command-center
 - Recruiter showcase: https://github.com/rbgdgar/nexus-command-center-showcase
+- Verified tokenless walkthrough: https://rbgdgar.github.io/nexus-command-center-showcase/
 - Implementation baseline: V2.21 bulk conversation management and sidebar polish milestone
 - Latest commit: `f8655aee337fe0afd0855134f7570c338617af19` (`feat: add bulk conversation management`)
 - Latest GitHub validation: passed — [Validate NEXUS run 33331909822](https://github.com/rbgdgar/nexus-command-center/actions/runs/33331909822)
@@ -66,7 +67,7 @@ has not been promoted to Render. Keep the live service on V2.20 until the releas
 is explicitly approved and independently verified.
 
 - [x] V2.21 sidebar selection and bulk archive, restore, delete, and purge controls implemented.
-- [x] Local validation passed: compile/import, 109 tests, frontend lint, and frontend build.
+- [x] Local validation passed: compile/import, 110 tests, frontend lint, and frontend build.
 - [x] GitHub Actions validation passed for commit `f8655ae`.
 - [x] No deployment workflow ran for the V2.21 push.
 - [x] Public recruiter showcase repository created with the complete project documentation set.
@@ -77,10 +78,10 @@ is explicitly approved and independently verified.
 - [ ] Perform browser verification of sidebar selection, independent scrolling, width adjustment, and bulk actions.
 - [ ] Record the deployment timestamp, commit, endpoint results, and any rollback decision here.
 
-The anonymous demo host is not provisioned yet. The showcase repository is public,
-but no public demo URL should be advertised until a separate host is configured
+The static anonymous recruiter walkthrough is live and requires no token. The
+full anonymous backend demo host is not provisioned yet. It must be configured
 with `NEXUS_DEMO_MODE=true`, no secrets, disposable data, and independent endpoint
-and browser verification.
+and browser verification before it is advertised as a backend demo.
 
 ## Optional configuration still pending
 
