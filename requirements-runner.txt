@@ -1,0 +1,4 @@
+pyttsx3==2.99
+openwakeword==0.6.0
+sounddevice==0.5.6
+pillow==12.3.0

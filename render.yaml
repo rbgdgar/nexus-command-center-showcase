@@ -1,0 +1,25 @@
+services:
+  - type: web
+    name: nexus-command-center-demo
+    runtime: docker
+    plan: free
+    region: singapore
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: NEXUS_MODEL_PROVIDER
+        value: ollama
+      - key: NEXUS_OLLAMA_ENABLED
+        value: false
+      - key: NEXUS_ALLOW_PAID_MODELS
+        value: false
+      - key: NEXUS_DEMO_MODE
+        value: true
+      - key: NEXUS_ACCESS_TOKEN
+        value: ""
+      - key: NEXUS_SERVE_FRONTEND
+        value: true
+      - key: NEXUS_AUTOMATION_ENABLED
+        value: false
+      - key: NEXUS_MCP_SERVERS
+        value: '[]'

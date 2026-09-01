@@ -1,0 +1,18 @@
+{
+  "name": "NEXUS Command Center",
+  "short_name": "NEXUS",
+  "description": "Secure local-first AI operations command center",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#05080d",
+  "theme_color": "#071018",
+  "icons": [
+    {
+      "src": "/nexus-icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

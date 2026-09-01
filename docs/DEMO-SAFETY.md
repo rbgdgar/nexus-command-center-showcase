@@ -8,6 +8,8 @@ service. It must be configured with:
 - A disposable seeded database containing fictional showcase data only
 - No production database URL, local-runner pairing, or outbound automation
 - Rate limiting at the hosting or edge layer
+- Seeded fictional conversations that make the V2.21 workspace visible without
+  requiring a provider call
 
 The application rejects all API methods other than GET, HEAD, and OPTIONS while
 demo mode is enabled. This protects conversation mutation, provider connection,

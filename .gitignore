@@ -1,14 +1,38 @@
+# Environment variables
 .env
 .env.*
 !.env.example
-data/
-logs/
-*.db
-*.sqlite*
-node_modules/
-frontend/dist/
+
+# Python
 .venv/
+venv/
 __pycache__/
 *.py[cod]
+*.pyo
 .pytest_cache/
+
+# Node
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
+Thumbs.db
+
+# NEXUS runtime data
+data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+logs/
+
+# Independent recruiter showcase repository
+nexus-command-center-showcase/
