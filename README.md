@@ -91,6 +91,17 @@ or secrets. A fuller backend demo is prepared as an isolated deployment using
 credentials, and no production database. Do not use the token-protected URL as
 the recruiter demo.
 
+### Full backend demo deployment
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/rbgdgar/nexus-command-center-showcase)
+
+The button creates a separate `nexus-command-center-demo` service from the
+included `render.yaml`. It is designed to resemble the full NEXUS UI while
+remaining anonymous and read-only: it seeds fictional conversations, uses local
+disposable SQLite storage, disables provider calls, and rejects all state-changing
+API methods. Do not connect this Blueprint to the production database or add
+provider, runner, SMTP, MCP, or access-token secrets.
+
 The delivery sequence is documented in [`ROADMAP.md`](ROADMAP.md), and production
 procedures are maintained in [`docs/OPERATIONS.md`](docs/OPERATIONS.md).
 For a start-to-current overview, see [`docs/PROJECT-SUMMARY.md`](docs/PROJECT-SUMMARY.md)

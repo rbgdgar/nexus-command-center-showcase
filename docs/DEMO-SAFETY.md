@@ -26,6 +26,10 @@ repository. The included `render.yaml` creates `nexus-command-center-demo` with
 the demo safety settings. Do not add provider keys, a production database URL,
 an access token, SMTP credentials, MCP credentials, or runner credentials.
 
+You can start the isolated service with the [Deploy to Render button](https://render.com/deploy?repo=https://github.com/rbgdgar/nexus-command-center-showcase).
+This is the full UI/API demo path; the GitHub Pages walkthrough remains available
+when an interactive backend deployment is not needed.
+
 After the first deploy, verify anonymously:
 
 ```powershell
