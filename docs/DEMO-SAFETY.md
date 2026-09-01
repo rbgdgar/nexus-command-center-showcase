@@ -18,3 +18,23 @@ even when the host allows unauthenticated HTTP traffic.
 
 The demo URL is not considered ready for a CV until `/api/config`, `/health`, and
 `/ready` are checked anonymously and the browser workflow is verified.
+
+## Host setup
+
+Create a new Render Blueprint from this repository, not from the protected main
+repository. The included `render.yaml` creates `nexus-command-center-demo` with
+the demo safety settings. Do not add provider keys, a production database URL,
+an access token, SMTP credentials, MCP credentials, or runner credentials.
+
+After the first deploy, verify anonymously:
+
+```powershell
+curl.exe -sS https://<demo-host>/api/config
+curl.exe -sS https://<demo-host>/health
+curl.exe -sS https://<demo-host>/ready
+```
+
+The expected configuration reports `demo_mode: true` and
+`authentication_required: false`. The demo is ready for recruiter use only when
+the browser shows the seeded V2.21 conversations and the UI displays the
+`RECRUITER DEMO · READ-ONLY · NO TOKEN REQUIRED` banner.
